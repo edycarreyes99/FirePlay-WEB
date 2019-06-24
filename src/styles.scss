@@ -1,12 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 @font-face {
   font-family: GoogleSans;
   src: url("assets/Fuentes/GoogleSans-Regular.ttf");
 }
+
 * {
   font-family: GoogleSans, sans-serif;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+.mat-tab-label-content, .mat-tab-label {
+  color: white !important;
+  opacity: 100 !important;
+  font-size: 1.2rem !important;
+  /*background-color: orange;
+  border-radius: 10px;
+  margin: 0.5rem;*/
+}
+
+.mat-tab-header{
+  border-bottom-color: gray;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  background-color: orange !important;
+  height: .2rem;
+  margin-top: .3rem;
+}
+
+.mat-tab-label-active .mat-tab-label-content{
+  color: orange !important;
+}
