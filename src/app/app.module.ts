@@ -17,12 +17,14 @@ import {MaterialModule} from './modulos/material/material.module';
 // se realiza la importacion del componente de enviroments
 import {environment} from '../environments/environment';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { HomeComponent } from './pages/home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
