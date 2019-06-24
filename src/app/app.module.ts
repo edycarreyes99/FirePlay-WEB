@@ -16,11 +16,13 @@ import {MaterialModule} from './modulos/material/material.module';
 
 // se realiza la importacion del componente de enviroments
 import {environment} from '../environments/environment';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
