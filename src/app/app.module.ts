@@ -12,7 +12,7 @@ import {AngularFirestoreModule} from '@angular/fire/firestore';
 import {AngularFireStorageModule} from '@angular/fire/storage';
 
 // se realiza la importacion del modulo de todos los componentes de material design
-import {MaterialModule} from './modulos/material/material.module';
+import {MaterialModule} from './modules/material/material.module';
 
 // se realiza la importacion del componente de enviroments
 import {environment} from '../environments/environment';
