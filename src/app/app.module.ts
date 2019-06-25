@@ -18,13 +18,15 @@ import {MaterialModule} from './modules/material/material.module';
 import {environment} from '../environments/environment';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
+import { MovieCardComponent } from './components/movie-card/movie-card.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    MovieCardComponent
   ],
   imports: [
     BrowserModule,
