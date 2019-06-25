@@ -1,46 +1,42 @@
 <div class="home">
   <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
-    <a class="navbar-brand" href="#">
-      <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="60" height="60" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="50" height="50" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-             aria-haspopup="true" aria-expanded="false">
-            Dropdown
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Peliculas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Series</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ánime</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Novelas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">TV en Vivo</a>
+          </li>
+        </ul>
+        <div class="form-inline my-2 my-lg-0">
+          <button mat-icon-button class="mr-3">
+            <mat-icon class="text-white">search</mat-icon>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img class="rounded-circle" src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg"
+                 width="50"
+                 height="50" alt="Avatar">
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <div class="form-inline my-2 my-lg-0">
-        <button mat-icon-button class="mr-3">
-          <mat-icon class="text-white">search</mat-icon>
-        </button>
-        <a class="navbar-brand" href="#">
-          <img class="rounded-circle" src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg"
-               width="40"
-               height="40" alt="">
-        </a>
+        </div>
       </div>
     </div>
   </nav>
@@ -72,15 +68,37 @@
     </a>
   </div>
   <div class="container" style="z-index: 999">
-    <mat-card class="shadow mt-n5 carta bg-dark">
+    <mat-card class="mt-n5 carta bg-dark">
       <mat-card-title>
         <mat-tab-group mat-stretch-tabs class="example-stretched-tabs">
+          <mat-tab label="Acción">
+
+          </mat-tab>
+          <mat-tab label="Comedia"> Content 2</mat-tab>
+          <mat-tab label="Familia"> Content 3</mat-tab>
+          <mat-tab label="Historia"> Content 1</mat-tab>
+          <mat-tab label="Misterio"> Content 2</mat-tab>
+          <mat-tab label="Ciencia Ficción"> Content 1</mat-tab>
+          <mat-tab label="Guerra"> Content 2</mat-tab>
+          <mat-tab label="Charts"> Content 3</mat-tab>
+          <mat-tab label="TV Series"> Content 1</mat-tab>
+          <mat-tab label="Trailers"> Content 2</mat-tab>
           <mat-tab label="In Theatres"> Content 1</mat-tab>
           <mat-tab label="Coming Soon"> Content 2</mat-tab>
           <mat-tab label="Charts"> Content 3</mat-tab>
           <mat-tab label="TV Series"> Content 1</mat-tab>
           <mat-tab label="Trailers"> Content 2</mat-tab>
-          <mat-tab label="Más"> Content 3</mat-tab>
+          <mat-tab label="In Theatres"> Content 1</mat-tab>
+          <mat-tab label="Coming Soon"> Content 2</mat-tab>
+          <mat-tab label="Charts"> Content 3</mat-tab>
+          <mat-tab label="TV Series"> Content 1</mat-tab>
+          <mat-tab label="Trailers"> Content 2</mat-tab>
+          <mat-tab label="In Theatres"> Content 1</mat-tab>
+          <mat-tab label="Coming Soon"> Content 2</mat-tab>
+          <mat-tab label="Charts"> Content 3</mat-tab>
+          <mat-tab label="TV Series"> Content 1</mat-tab>
+          <mat-tab label="Trailers"> Content 2</mat-tab>
+          <mat-tab label="Trailers"> Content 2</mat-tab>
         </mat-tab-group>
       </mat-card-title>
     </mat-card>
