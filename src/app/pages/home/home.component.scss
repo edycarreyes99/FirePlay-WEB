@@ -3,23 +3,23 @@
   min-height: 200vh;
 
   nav {
-    background-color: rgba(0, 0, 0, 0.25) !important;
+    background-color: #ff6f00 !important;
     z-index: 999;
   }
 
   .carousell-img {
-    min-height: 80vh;
-    max-height: 80vh;
+    min-height: 35vh;
+    max-height: 35vh;
   }
 
   #carousell-peliculas {
-    margin-top: -5.5rem;
-    max-height: 80vh;
+    // margin-top: -5.5rem;
+    max-height: 35vh;
   }
 
   .nav-link {
     color: white !important;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-right: 1rem;
     margin-left: 1rem;
   }
