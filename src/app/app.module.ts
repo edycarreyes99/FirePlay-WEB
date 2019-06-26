@@ -20,6 +20,7 @@ import {NavbarComponent} from './components/navbar/navbar.component';
 import {HomeComponent} from './pages/home/home.component';
 import {MovieCardComponent} from './components/movie-card/movie-card.component';
 import {SidenavComponent} from './components/sidenav/sidenav.component';
+import {ServicioService} from "./services/servicio.service";
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import {SidenavComponent} from './components/sidenav/sidenav.component';
   ],
   providers: [
     NavbarComponent,
-    SidenavComponent
+    SidenavComponent,
+    ServicioService
   ],
   bootstrap: [AppComponent]
 })
