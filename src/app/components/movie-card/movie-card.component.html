@@ -1,3 +1,40 @@
-<p>
-  movie-card works!
-</p>
+<mat-card class="shadow mt-3 ml-3 bg-dark" style="max-width: 270px; border-radius: 20px;">
+  <mat-card-content>
+    <img style="border-top-left-radius: 20px; border-top-right-radius: 20px;"
+         mat-card-image
+         src="https://m.media-amazon.com/images/M/MV5BMjMyOTM4MDMxNV5BMl5BanBnXkFtZTcwNjIyNzExOA@@.jpg"
+         alt="Poster"
+         title="En una excursión en la que Peter y sus compañeros de clase asisten a una demostración científica, es mordido por una araña que ha sido manipulada genéticamente. Poco después, Peter descubre que posee habilidades especiales: una fuerza poco habitual y la agilidad de una araña. Tras utilizar sus poderes en beneficio propio, su tío es asesinado por un atracador que Peter deja escapar poco antes. Desde ese momento, jura dedicarse a la defensa de la Humanidad.">
+    <button mat-fab class="bg-warning float-right mt-n5">
+      <mat-icon class="text-dark">play_arrow</mat-icon>
+    </button>
+    <mat-card-title class="text-light text-center mt-3">
+      The amazing spider man 4
+    </mat-card-title>
+  </mat-card-content>
+  <mat-card-actions>
+    <div class="row">
+      <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
+        <div>
+          <button mat-icon-button>
+            <mat-icon class="text-light">favorite_border</mat-icon>
+          </button>
+          <button mat-icon-button>
+            <mat-icon class="text-light">share</mat-icon>
+          </button>
+          <button mat-icon-button>
+            <mat-icon class="text-light">get_app</mat-icon>
+          </button>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+        <div class="d-flex d-inline justify-content-center align-items-center mt-2">
+          <div class="text-warning">4/10</div>
+          <div class="text-warning">
+            <mat-icon>star_rate</mat-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-card-actions>
+</mat-card>

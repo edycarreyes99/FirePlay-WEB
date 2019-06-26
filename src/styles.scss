@@ -29,7 +29,7 @@ body {
   margin: 0.5rem;*/
 }
 
-.mat-tab-header{
+.mat-tab-header {
   border-bottom-color: gray;
 }
 
@@ -39,6 +39,10 @@ body {
   margin-top: .3rem;
 }
 
-.mat-tab-label-active .mat-tab-label-content{
+.mat-tab-label-active .mat-tab-label-content {
   color: orange !important;
+}
+
+button:focus {
+  outline: none;
 }

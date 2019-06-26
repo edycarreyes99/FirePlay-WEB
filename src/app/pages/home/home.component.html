@@ -67,14 +67,42 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-  <div class="container" style="z-index: 999">
+  <div class="container" style="z-index: 999; padding: 0;">
     <mat-card class="mt-n5 carta bg-dark">
-      <mat-card-title>
+      <mat-card-content>
         <mat-tab-group mat-stretch-tabs class="example-stretched-tabs">
           <mat-tab label="Acción">
-
+            <div class="row">
+              <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <app-movie-card></app-movie-card>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <app-movie-card></app-movie-card>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <app-movie-card></app-movie-card>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <app-movie-card></app-movie-card>
+              </div>
+            </div>
           </mat-tab>
-          <mat-tab label="Comedia"> Content 2</mat-tab>
+          <mat-tab label="Comedia">
+            <div class="row">
+              <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <app-movie-card></app-movie-card>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <app-movie-card></app-movie-card>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <app-movie-card></app-movie-card>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <app-movie-card></app-movie-card>
+              </div>
+            </div>
+          </mat-tab>
           <mat-tab label="Familia"> Content 3</mat-tab>
           <mat-tab label="Historia"> Content 1</mat-tab>
           <mat-tab label="Misterio"> Content 2</mat-tab>
@@ -100,7 +128,7 @@
           <mat-tab label="Trailers"> Content 2</mat-tab>
           <mat-tab label="Trailers"> Content 2</mat-tab>
         </mat-tab-group>
-      </mat-card-title>
+      </mat-card-content>
     </mat-card>
   </div>
 </div>
