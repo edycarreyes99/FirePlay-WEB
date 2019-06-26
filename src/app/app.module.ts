@@ -16,9 +16,10 @@ import {MaterialModule} from './modules/material/material.module';
 
 // se realiza la importacion del componente de enviroments
 import {environment} from '../environments/environment';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { HomeComponent } from './pages/home/home.component';
-import { MovieCardComponent } from './components/movie-card/movie-card.component';
+import {NavbarComponent} from './components/navbar/navbar.component';
+import {HomeComponent} from './pages/home/home.component';
+import {MovieCardComponent} from './components/movie-card/movie-card.component';
+import {SidenavComponent} from './components/sidenav/sidenav.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { MovieCardComponent } from './components/movie-card/movie-card.component
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    MovieCardComponent
+    MovieCardComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,10 @@ import { MovieCardComponent } from './components/movie-card/movie-card.component
     // importacion del modulo de material design
     MaterialModule
   ],
-  providers: [],
+  providers: [
+    NavbarComponent,
+    SidenavComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
