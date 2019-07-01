@@ -1,0 +1,17 @@
+.app-nav-bar {
+  nav {
+    background-color: #ff6f00 !important;
+    z-index: 999;
+  }
+
+  .nav-link {
+    color: white !important;
+    font-size: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .active {
+    color: gold !important;
+  }
+}
