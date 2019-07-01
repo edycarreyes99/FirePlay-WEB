@@ -1,4 +1,24 @@
 .side-nav {
+  ::-webkit-scrollbar {
+    -webkit-appearance: none
+  }
+
+  ::-webkit-scrollbar:vertical {
+    width: 7px;
+    // display: none;
+  }
+
+  ::-webkit-scrollbar:horizontal {
+    height: 10px
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--black-transparent-20, rgba(253, 125, 27, 0.53));
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    z-index: 999;
+  }
+
   .example-container {
     width: 100vw;
     height: 100vh;
