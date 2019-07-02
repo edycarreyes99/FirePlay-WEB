@@ -4,19 +4,20 @@
   }
 
   ::-webkit-scrollbar:vertical {
-    width: 7px;
+    width: 8px;
     // display: none;
   }
 
   ::-webkit-scrollbar:horizontal {
-    height: 10px
+    // height: 10px;
+    display: none;
   }
 
   ::-webkit-scrollbar-thumb {
     background-color: var(--black-transparent-20, rgba(253, 125, 27, 0.53));
     -webkit-border-radius: 4px;
     border-radius: 4px;
-    z-index: 999;
+    position: relative;
   }
 
   .example-container {
