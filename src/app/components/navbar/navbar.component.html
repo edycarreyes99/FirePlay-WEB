@@ -27,12 +27,26 @@
         </li>
       </ul>
       <div class="form-inline my-2 my-lg-0">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#" [mat-menu-trigger-for]="accountMenu">
           <img class="rounded-circle"
                src="https://media.istockphoto.com/vectors/man-avatar-profile-view-vector-id998200566"
                width="50"
                height="50" alt="Avatar">
         </a>
+        <mat-menu #accountMenu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>dialpad</mat-icon>
+            <span>Redial</span>
+          </button>
+          <button mat-menu-item disabled>
+            <mat-icon>voicemail</mat-icon>
+            <span>Check voice mail</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>notifications_off</mat-icon>
+            <span>Disable alerts</span>
+          </button>
+        </mat-menu>
       </div>
     </div>
   </nav>
