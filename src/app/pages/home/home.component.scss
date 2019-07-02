@@ -30,4 +30,9 @@
     box-shadow: none !important;
   }
 
+  .onHover:hover {
+    cursor: pointer;
+    background-color: #00000031;
+  }
+
 }
