@@ -6,15 +6,36 @@
         <div class="text-light" style="font-size: 2rem;">FirePlay</div>
       </div>
       <mat-list class="pt-2 text-center align-middle">
-        <div class="container-fluid d-flex align-items-center justify-content-center mt-n2" style="min-height: 5rem; background-color: rgba(255,255,255,0.1)">
-          <input type="text" placeholder="Buscar" style="min-height: 2rem; border-radius: 50px; border: none; padding: 0.5rem;" >
+        <div class="container-fluid d-flex align-items-center justify-content-center mt-n2"
+             style="min-height: 5rem; background-color: rgba(255,255,255,0.1)">
+          <input type="text" placeholder="Buscar"
+                 style="min-height: 2rem; border-radius: 50px; border: none; padding: 0.5rem;">
         </div>
         <h3 mat-subheader style="color: lightgrey;">Géneros</h3>
         <div class="container-fluid" style="max-height: 30rem; overflow: auto;">
-          <a matTooltip="Accion" class="onHover mx-auto" mat-list-item style="text-decoration: none;">
+          <a data-toggle="collapse" href="#accionToggle" aria-expanded="false" aria-controls="accionToggle"
+             aria-expanded="false" role="button" matTooltip="Accion" class="onHover mx-auto" mat-list-item
+             style="text-decoration: none;">
             <i matListIcon class="mx-auto fas fa-crosshairs text-light"></i>
             <h3 matLine class="text-light"> Acción </h3>
           </a>
+          <div class="collapse multi-collapse" id="accionToggle">
+            <a class="onHover mx-auto" mat-list-item style="text-decoration: none;">
+              <h3 matLine class="text-light">
+                Nuevo
+              </h3>
+            </a>
+            <a class="onHover mx-auto" mat-list-item style="text-decoration: none;">
+              <h3 matLine class="text-light">
+                Popular
+              </h3>
+            </a>
+            <a class="onHover mx-auto" mat-list-item style="text-decoration: none;">
+              <h3 matLine class="text-light">
+                Proximamente
+              </h3>
+            </a>
+          </div>
           <a matTooltip="Animacion" class="onHover mx-auto" mat-list-item style="text-decoration: none;">
             <i matListIcon class="mx-auto fas fa-baby text-light"></i>
             <h3 matLine class="text-light"> Animación </h3>
@@ -37,7 +58,7 @@
           </a>
           <a matTooltip="Documental" class="onHover mx-auto" mat-list-item style="text-decoration: none;">
             <i matListIcon class="mx-auto fas fa-book text-light"></i>
-            <h3 matLine class="text-light"> Documentales </h3>am "x
+            <h3 matLine class="text-light"> Documentales </h3>
           </a>
           <a matTooltip="Drama" class="onHover mx-auto" mat-list-item style="text-decoration: none;">
             <i matListIcon class="mx-auto fas fa-theater-masks text-light"></i>
