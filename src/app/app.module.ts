@@ -1,6 +1,8 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
+import {ReactiveFormsModule, FormsModule} from '@angular/forms';
+
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
@@ -20,7 +22,8 @@ import {NavbarComponent} from './components/navbar/navbar.component';
 import {HomeComponent} from './pages/home/home.component';
 import {MovieCardComponent} from './components/movie-card/movie-card.component';
 import {SidenavComponent} from './components/sidenav/sidenav.component';
-import {ServicioService} from "./services/servicio.service";
+import {ServicioService} from './services/servicio.service';
+import {__importDefault} from 'tslib';
 
 
 @NgModule({
@@ -35,6 +38,8 @@ import {ServicioService} from "./services/servicio.service";
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
 
     // importaciones de firebase
     AngularFireModule.initializeApp(environment.firebaseConfig),

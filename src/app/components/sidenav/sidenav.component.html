@@ -8,8 +8,17 @@
       <mat-list class="pt-2 text-center align-middle">
         <div class="container-fluid d-flex align-items-center justify-content-center mt-n2"
              style="min-height: 5rem; background-color: rgba(255,255,255,0.1)">
-          <input type="text" placeholder="Buscar"
-                 style="min-height: 2rem; border-radius: 50px; border: none; padding: 0.5rem;">
+          <form class="example-form">
+            <input placeholder="Buscar" aria-label="State" [matAutocomplete]="auto" [formControl]="stateCtrl"
+                   style="min-height: 2rem; border-radius: 50px; border: none; padding: 0.5rem;">
+            <mat-autocomplete #auto="matAutocomplete">
+              <mat-option *ngFor="let state of filteredStates | async" [value]="state.name">
+                <img class="example-option-img" aria-hidden [src]="state.flag" height="25">
+                <span>{{state.name}}</span> |
+                <small>Population: {{state.population}}</small>
+              </mat-option>
+            </mat-autocomplete>
+          </form>
         </div>
         <h3 mat-subheader style="color: lightgrey;">Géneros</h3>
         <div class="container-fluid" style="max-height: 30rem; overflow: auto;">
